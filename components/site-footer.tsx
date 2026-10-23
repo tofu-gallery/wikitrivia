@@ -1,5 +1,4 @@
 import classNames from "classnames";
-import GitHubButton from "react-github-btn";
 import * as ui from "../styles/ui.css";
 
 interface Props {
@@ -42,14 +41,14 @@ export default function SiteFooter(props: Props) {
         .
       </div>
       <div className={ui.githubButtonSlot}>
-        <GitHubButton
+        <a
           href="https://github.com/tom-james-watson/wikitrivia"
-          data-size="large"
-          data-show-count="true"
+          target="_blank"
+          rel="noopener noreferrer"
           aria-label="Star tom-james-watson/wikitrivia on GitHub"
         >
-          Star
-        </GitHubButton>
+          Star on GitHub
+        </a>
       </div>
     </div>
   );

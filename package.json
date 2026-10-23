@@ -16,15 +16,14 @@
     "decks:build": "bun run content/scripts/build-cards.ts",
     "sparql:list": "bun run content/scripts/run-sparql.ts --list",
     "sparql:run": "bun run content/scripts/run-sparql.ts",
-    "start": "serve out"
+    "start": "next start"
   },
   "dependencies": {
     "classnames": "^2.5.1",
     "motion": "^12.38.0",
     "next": "^16.2.1",
     "react": "19.2.4",
-    "react-dom": "19.2.4",
-    "react-github-btn": "^1.4.0"
+    "react-dom": "19.2.4"
   },
   "devDependencies": {
     "@types/node": "^25.5.0",
@@ -36,7 +35,7 @@
     "@vanilla-extract/sprinkles": "^1.6.5",
     "oxfmt": "^0.41.0",
     "oxlint": "^1.56.0",
-    "serve": "^14.2.6",
     "typescript": "^5.9.3"
-  }
+  },
+  "packageManager": "bun@1.4.2"
 }
